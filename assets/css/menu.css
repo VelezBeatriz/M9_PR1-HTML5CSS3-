@@ -1,0 +1,202 @@
+.container__menu .inner {
+  padding: 10px;
+}
+
+/* CSS Logo */
+.container__menu .inner .inner__search {
+  display: none;
+}
+
+/* CSS Search */
+.container__menu .inner #search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em;
+}
+.container__menu .inner #search form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.inner #search input[type="search"] {
+  width: 80%;
+  padding: 5px 15px;
+  background-color: white;
+  border-radius: 5px;
+  border: solid 2px #ccc;
+}
+
+.inner #search form button {
+  width: 20%;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+  border: solid 2px #ccc;
+}
+.inner #search form button i {
+  color: var(--color-text);
+}
+
+.inner #search input[type="search"]:focus,
+.inner #search form button:active {
+  border-color: var(--color-seconday);
+  transition: all 0.3s;
+}
+
+/* CSS Menu */
+
+#nav__menu h2,
+.inner__header,
+section#info .inner__header,
+section#news .inner__header {
+  display: inline-block;
+  color: var(--color-title);
+  font-weight: 700;
+  line-height: 1.5em;
+  font-size: 1.38889em;
+  border-bottom: solid 3px var(--color-seconday);
+  text-transform: capitalize;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+#nav__menu ul > li {
+  padding: 0.8em 0;
+  font-size: 0.9em;
+  letter-spacing: 0.075em;
+  border-top: solid 1px #ccc;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+#nav__menu ul > li a {
+  color: rgb(73, 73, 73);
+}
+#nav__menu ul > li a:hover {
+  color: var(--color-seconday);
+  transition: all 0.3s;
+}
+
+#nav__menu ul > li:first-child {
+  border-top: none;
+}
+
+#nav__menu ul > li span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav__menu ul > li i {
+  color: #ccc;
+}
+
+#nav__menu ul > li span:hover i {
+  color: var(--color-seconday);
+  transition: all 0.2s;
+}
+
+#nav__menu li ul {
+  display: none;
+  margin-top: 1.5em;
+}
+#nav__menu ul > li > ul > li a {
+  color: var(--color-text);
+}
+
+#nav__menu ul > li > ul > li {
+  padding: 0.5em;
+  margin-left: 0.8em;
+  border-top: none;
+}
+
+#nav__menu li:hover ul {
+  display: block;
+  font-size: 0.8em;
+}
+
+/*CSS News*/
+
+.container__menu #favnews {
+  margin: 2em 0em;
+  padding-top: 2em;
+  border-top: solid 2px #ccc;
+}
+
+.container__menu .inner .inner__header {
+  font-size: 0.9em;
+}
+
+#favnews .inner,
+#rrss .inner {
+  padding: 0;
+}
+
+#favnews article {
+  border-top: solid 1px #ccc;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+}
+
+#favnews article:first-child {
+  border-top: none;
+}
+
+#favnews article p,
+#rrss .inner p,
+section#info .cards .card .content p,
+section#news .news article div p.content {
+  color: var(--color-text);
+  font-size: 15.6px;
+  line-height: 1.8em;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* CSS Rrss */
+
+#rrss {
+  margin-top: 2em;
+  padding: 2em 0em;
+  border-top: solid 2px #ccc;
+}
+
+#rrss .inner ul {
+  margin-top: 1.5em;
+}
+#rrss .inner ul li {
+  padding: 1.5em 0.5em;
+  border-top: solid 1px #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  font-size: 16px;
+}
+#rrss .inner ul li:first-child a {
+  text-decoration: underline dotted;
+}
+
+#rrss .inner ul li i {
+  color: var(--color-seconday);
+}
+
+#rrss .inner ul li:first-child {
+  border-top: none;
+}
+
+/* CSS Footer */
+.container__menu footer {
+  border-top: solid 2px #ccc;
+  margin-top: 2em;
+  padding: 2em 0em;
+  font-size: 14px;
+  color: var(--color-text);
+  font-family: "Open Sans", sans-serif;
+}
+
+.container__menu footer a {
+  text-decoration: underline dotted;
+}
